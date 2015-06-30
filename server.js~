@@ -1,0 +1,19 @@
+var express = require('express');
+var bodyParser = require('body-parser');
+var connection = require('./utils/connect');
+
+var app = express();
+var port = process.env.Port || 3007;
+var http = require('http').Server(app);
+
+app.use(bodyParser.json());
+
+connection();
+
+app.use('/api', require('./service/users/users.js'));
+
+http.listen(3007, function() {
+	console.log('Listening on *: 3007');
+    });
+console.log('Magic happens on port ' + port);
+

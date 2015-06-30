@@ -1,0 +1,20 @@
+{
+  "name": "create-rest-api",
+  "version": "1.0.0",
+  "description": "Un fichier de quotes est fourni.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NodeJS42/create-rest-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NodeJS42/create-rest-api/issues"
+  },
+  "homepage": "https://github.com/NodeJS42/create-rest-api#readme"
+}
